@@ -11,7 +11,7 @@ class Solution:
 
             while queue and nums[queue[-1]]<nums[i]:
                 queue.pop()
-
+                
             queue.append(i)
 
             out.append(nums[queue[0]])
