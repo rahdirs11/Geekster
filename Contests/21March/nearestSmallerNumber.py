@@ -10,11 +10,11 @@ numbers = [int(x) for x in input().split()]
 
 for i, num in enumerate(numbers):
     if i == 0:
-        print(-1, end=" ")
+        print(-1, end=" ")  
         stack.append(num)
         continue
 
-    while len(stack) != 0 and stack[-1] > num:
+    while len(stack) != 0 and stack[-1] >= num:
         stack.pop()
     print(stack[-1] , end=" ")
     stack.append(num)
