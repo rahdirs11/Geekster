@@ -16,4 +16,4 @@ def lcs(string1, string2):
     return dp[-1][-1]
 
 
-print(lcs("ABCD", ""))
+print(lcs("AGGTAB", "GXTXAYB"))
