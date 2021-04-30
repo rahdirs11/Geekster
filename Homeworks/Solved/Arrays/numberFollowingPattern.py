@@ -25,14 +25,13 @@ def numberPattern(string: str) -> str:
 	for i in range(1, len(string)):
 		if string[i] == 'I':
 			res.append(minSoFar)
-			minSoFar += 1
 			positionOfI = i + 1
 		else:
 			res.append(res[i])
 			for j in range(positionOfI, i + 1):
 				res[j] += 1
 
-			minSoFar += 1
+		minSoFar += 1
 
 	result = ''.join(map(str, res))
 	return result
