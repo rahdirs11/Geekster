@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .menubar {
+            background-color: cyan;
+            border-radius: 15px;
+        }
+        
+        .menubar>ul li {
+            list-style: None;
+            margin-right: 25px;
+            display: inline-block;
+            padding: 15px 0px;
+        }
+        
+        .menubar>ul>li>a {
+            text-decoration: none;
+            margin: 0px 20px;
+            color: black
+        }
+        
+        .menubar>ul>li>a:hover {
+            color: red
+        }
+        
+        .table {
+            width: 800px;
+            border-collapse: collapse;
+            margin-left: 200px;
+        }
+        
+        .table>tbody>tr:nth-child(odd) {
+            background-color: rgb(247, 148, 247);
+            color: white;
+        }
+        
+        .table tbody thead td th {
+            border-radius: 15px 15px 0px 0px;
+        }
+        
+        .table thead th {
+            padding: 15px 20px;
+            border: 1px solid black
+        }
+        
+        .table tbody td {
+            padding: 15px 20px;
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menubar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Help</a>
+            </li>
+        </ul>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sridhar</td>
+                <td>N S</td>
+                <td>21</td>
+                <td>Bengaluru</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Deepak</td>
+                <td>Kumar</td>
+                <td>21</td>
+                <td>Bengaluru</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Antony</td>
+                <td>Ajay</td>
+                <td>22</td>
+                <td>Bengaluru</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
